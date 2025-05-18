@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryDarkColor">#3700B3</color>
+    <color name="primaryLightColor">#BB86FC</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+
+    <!-- Additional Colors -->
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="cardBackground">#33FFFFFF</color>
+    <color name="progressTrack">#E0E0E0</color>
+
+    <!-- Bottom Navigation Colors -->
+    <color name="bottom_nav_active">#6200EE</color>
+    <color name="bottom_nav_inactive">#757575</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="lightBackground">#F5F5F5</color>       <!-- light gray background -->
+    <color name="cardStroke">#DDDDDD</color>            <!-- light stroke color -->
+    <color name="cardStrokeLight">#1A000000</color> <!-- Very light gray for border -->
+
+    <color name="textPrimaryDark">#DE000000</color> <!-- 87% black -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="bottom_nav_colors">#FF5722</color> <!-- Example orange -->
+    <!-- Secondary Colors -->
+    <color name="secondaryColor">#03DAC5</color>
+    <color name="secondaryDarkColor">#018786</color>
+    <color name="secondaryLightColor">#70EFDE</color>
+    <color name="yellow">#FFEB3B</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="gold">#FFD700</color>
+    <color name="blue">#2196F3</color>
+
+
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#DE000000</color>
+    <color name="textSecondary">#8A000000</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+    <color name="textOnSecondary">#000000</color>
+    <color name="secondary_text">#757575</color>
+    <color name="primary_text">#212121</color>
+    <color name="divider_color">#E0E0E0</color>
+    <string name="description_label">Description</string>
+    <string name="additional_info">Additional Information</string>
+
+    <color name="light_gray_background">#F5F5F5</color>
+    <!-- Error Color -->
+    <color name="errorColor">#B00020</color>
+</resources>

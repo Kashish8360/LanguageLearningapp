@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="@string/dashboard"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/icons_container"
+        android:layout_below="@id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/keypassTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="@string/no_entities_found"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Three small icons container at the bottom -->
+<LinearLayout
+android:id="@+id/icons_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_above="@id/bottom_navigation"
+android:orientation="horizontal"
+android:gravity="center"
+android:paddingVertical="8dp"
+android:background="@android:color/white">
+
+<!-- Trophy -->
+<ImageView
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:src="@drawable/ic_trophy"
+    app:tint="@color/gold"
+    android:layout_marginHorizontal="16dp"
+    android:contentDescription="@string/trophy_icon"/>
+
+<!-- Book -->
+<ImageView
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:src="@drawable/ic_book"
+    android:layout_marginHorizontal="16dp"
+    android:contentDescription="@string/book_icon"/>
+
+<!-- Star -->
+<ImageView
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:src="@drawable/ic_star"
+    android:layout_marginHorizontal="16dp"
+    android:contentDescription="@string/star_icon"/>
+</LinearLayout>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottom_navigation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="@android:color/white"
+app:elevation="8dp"
+app:itemIconTint="@color/bottom_nav_colors"
+app:itemTextColor="@color/bottom_nav_colors"
+app:labelVisibilityMode="labeled"
+app:menu="@menu/bottom_nav_menu" />
+
+<ProgressBar
+android:id="@+id/progressBar"
+style="?android:attr/progressBarStyleLarge"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+android:visibility="gone" />
+    </RelativeLayout>

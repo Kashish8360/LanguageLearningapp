@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language Learning App</string>
+    <string name="app_logo">App Logo</string>
+    <string name="app_version">Version 1.0</string>
+    <string name="no_entities_found">No entities found</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="session_key_format">Session Key: %1$s</string>
+    <string name="network_error_message">Network error occurred. Please check your connection.</string>
+    <string name="response_error_message">Error reading server response.</string>
+    <string name="no_data_available">No data available to display.</string>
+    <string name="no_valid_data">No valid data found.</string>
+    <string name="data_parse_error">Error parsing data.</string>
+    <string name="endpoint_not_found">Requested endpoint not found.</string>
+    <string name="server_error">Server error occurred. Please try again later.</string>
+    <string name="unexpected_error">Unexpected error occurred (Code: %1$d)</string>
+    <string name="trophy_icon">Trophy Icon</string>
+    <string name="book_icon">Book Icon</string>
+    <string name="star_icon">Star Icon</string>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+</resources>
